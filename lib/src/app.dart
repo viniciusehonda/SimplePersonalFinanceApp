@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:spfa/helpers/AuthenticationHelper.dart';
 import 'package:spfa/src/authentication/login_view.dart';
 import 'package:spfa/src/authentication/registration_view.dart';
 import 'package:spfa/src/home/home_view.dart';

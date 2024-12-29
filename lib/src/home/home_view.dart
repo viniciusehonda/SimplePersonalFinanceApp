@@ -1,9 +1,5 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:spfa/helpers/AuthenticationHelper.dart';
-import 'package:spfa/src/authentication/login_view.dart';
 import 'package:spfa/src/components/menu/menu.dart';
 
 class HomeView extends StatefulWidget {
