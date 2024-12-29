@@ -1,7 +1,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:spfa/helpers/AuthenticationHelper.dart';
 import 'package:spfa/helpers/DatabaseHelper.dart';
+import 'package:spfa/src/home/home_view.dart';
 
 class LoginView extends StatefulWidget {
   @override
@@ -41,8 +43,15 @@ class _LoginViewState extends State<LoginView> {
 
       if (user != null) {
         // Successful login
+        await saveLoginState(true, username: username);
+
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Login Successful')),
+        );
+
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => HomeView()),
         );
       } else {
         // Invalid credentials
